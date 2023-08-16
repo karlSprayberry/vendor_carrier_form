@@ -169,10 +169,12 @@
                 <textarea id="companyExist-input" type="text" placeholder="" name="companyExist"></textarea>
 
                 <label for="currentConductQuestion"> Has or is the company currently conducting business under any other names within the last 10 years?</label><br>
-                <input type="radio" id="yes" name="currentConductQuestion" value="yes">
-                <label for="yes">Yes</label><br>
-                <input type="radio" id="no" name="currentConductQuestion" value="no">
-                <label for="no">No</label><br>
+                <input type="radio" id="Yes" name="currentConductQuestion" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="currentConductQuestion" value="No">
+                <label for="No">No</label><br>
+
+                <br>
 
                 <label for="businessType">Type Of Business</label><br>
                 <input type="radio" id="Individual" name="businessType" value="Individual">
@@ -185,6 +187,31 @@
                 <label for="LLC">LLC</label><br>
                 <input type="radio" id="Other" name="businessType" value="Other">
                 <label for="Other">Other</label><br>
+
+                <br>
+
+                <label for="publicTradedRadio">Is the company publicly traded?</label><br>
+                <input type="radio" id="Yes" name="publicTradedRadio" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="publicTradedRadio" value="No">
+                <label for="No">No</label><br>
+
+                <br>
+
+                <label for="codeOfConductConfirm">Please confirm that the company has read and abides by our Supplier Code of Conduct located at rheem.com.</label><br>
+                <input type="radio" id="Yes" name="codeOfConductConfirm" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="codeOfConductConfirm" value="No">
+                <label for="No">No</label><br>
+
+                <br>
+
+                <label for="countryOfOrigin">What is the country of origin for the goods the company provides to Rheem? If there are more than one, please list them.</label><br>
+                <textarea id="countryOfOrigin-input" type="text" placeholder="" name="countryOfOrigin"></textarea>
+                <label for="rheemRelationships">List previous or current relationships with Rheem and the period when such relationships were active.</label><br>
+                <textarea id="rheemRelationships-input" type="text" placeholder="" name="rheemRelationships"></textarea>
+
+
 
                 <br><br><br>
                 <button class="btn btn-primary submit-button" aria-invalid="false" type="submit" formmethod="post">Submit Vendor Form</button>
