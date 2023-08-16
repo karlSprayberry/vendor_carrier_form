@@ -1,0 +1,66 @@
+@font-face {
+    font-family: RheemSansRoman;
+    src: url(fonts/RheemSansRoman.woff2);
+}
+
+@font-face {
+    font-family: RheemSansLight;
+    src: url(fonts/RheemSansLight.woff2);
+}
+
+@font-face {
+    font-family: RheemSansBold;
+    src: url(fonts/RheemSansBold.woff2);
+    font-weight: bold;
+}
+
+* {
+    text-align: left;
+    font-family: RheemSansRoman;
+    font-size: 18px;
+}
+
+input, select, .container {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 15px;
+    border-color: #97999b;
+    margin: 5px;
+}
+
+.container {
+    padding: 1px 10px 10px 10px;
+}
+
+input {
+    display: table-row;
+    background-clip: padding-box;
+}
+
+input[readonly] {
+    background-color: #97999b;
+    border: 2px solid;
+    border-color: #97999b;
+}
+
+button {
+    display: table;
+    margin: 5px;
+    color: #fff;
+    background-color: #e70033;
+    border: 2px solid #e70033;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    transition: all 300ms ease;
+    
+}
+
+button:hover {
+    background-color: #b80023;
+    border-color: #b80023;    
+}
+
+option {
+    border: none;
+}

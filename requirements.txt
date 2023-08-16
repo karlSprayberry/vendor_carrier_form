@@ -1,0 +1,7 @@
+Flask==2.0.3
+Flask-Cors==3.0.4
+gunicorn==19.9.0
+requests==2.18.4
+urllib3==1.22
+Werkzeug==2.2.2
+

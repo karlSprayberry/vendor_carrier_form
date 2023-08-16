@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <body>
+      <form action = "http://localhost:5000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+
+                     <div class="md-form">
+						<label >Invoice Attachment</label><br/><br/>
+						<input type="file" name="invoiceAttachment" multiple required/>
+
+					</div>
+
+					<div class="md-form">
+						<label>Proof of Purchase</label><br/><br/>
+						<input type="file" name="proofofPurchase" multiple />
+
+					</div>
+
+					<div class="md-form">
+						<label>Proof of payment for labor</label><br/><br/>
+						<input type="file" name="paymentLabor" multiple />
+
+					</div>
+
+					<div class="md-form">
+						<label>Additional Attachment</label><br/><br/>
+						<input type="file" name="additionalAttachment" multiple />
+
+					</div>
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>
+

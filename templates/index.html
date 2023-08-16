@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Chosen/docsupport/style.css">
+    <link rel="stylesheet" href="Chosen/docsupport/prism.css">
+    <link rel="stylesheet" href="Chosen/chosen.css">
+
+    <link rel="dns-prefetch" href="//static.globalimageserver.com">
+    <link rel="dns-prefetch" href="//www.google.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="stylesheet" id="cf7mls-css" href="https://www.rheem.com/media/plugins/contact-form-7-multi-step/assets/frontend/css/cf7mls.css?v=100" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css" href="https://www.rheem.com/media/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="cf7cf-style-css" href="https://www.rheem.com/media/plugins/cf7-conditional-fields/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="jquery-ui-smoothness-css" href="https://www.rheem.com/media/plugins/contact-form-7/includes/js/jquery-ui/themes/smoothness/jquery-ui.min.css" type="text/css" media="screen">
+    <link rel="shortlink" href="https://www.rheem.com/?p=12149">
+    <link rel="canonical" href="https://www.rheem.com/voucher-online-claim-submission/">
+    <link rel="SHORTCUT ICON" href="https://www.rheem.com/media/themes/RheemTheme/favicon.ico">
+    <link media="all" rel="stylesheet" type="text/css" href="https://www.rheem.com/media/themes/RheemTheme/css/aos.css">
+    <link media="all" rel="stylesheet" type="text/css" href="https://www.rheem.com/media/themes/RheemTheme/css/style.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link media="all" rel="stylesheet" type="text/css" href="https://www.rheem.com/media/themes/RheemTheme/css/header-top.min.css">
+    <link media="all" rel="stylesheet" type="text/css" href="https://www.rheem.com/media/themes/RheemTheme/css/flags/css/flags.min.css">
+    <style>
+        .rh-h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-family: "RheemSansLight", Helvetica, Arial, sans-serif;
+            line-height: 1.2;
+            font-size: 43px;
+        }
+
+            .rh-h1 strong {
+                font-family: "RheemSansLight", Helvetica, Arial, sans-serif;
+            }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-child {
+            flex: 1;
+        }
+
+            .flex-child:first-child {
+                margin-right: 50px;
+            }
+
+            .flex-child:nth-child(2) {
+                margin-right: 50px;
+            }
+
+        .submit-button {
+            font-size: 20px;
+        }
+    </style>
+    <title>Supplier Onboarding</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+
+<body ng-app="voucherApp" ng-controller="voucherController" ng-style="bodyStyle" onload="OnLoad()">
+    <div class="container">
+        <!--TOP NAV-->
+        <div class="desktop">
+            <div class="row d-flex justify-content-end top-nav">
+                <div class="col-12 text-right">
+                    <a data-gtmlocation="header" data-gtmobject="Sustainability" data-gtmaction="click" href="https://www.rheem.com/sustainability/">Sustainability</a>
+                    <a data-gtmlocation="header" data-gtmobject="Careers" data-gtmaction="click" href="https://www.rheem.com/about/careers/">Careers</a>
+                    <a data-gtmlocation="header" data-gtmobject="Contact" data-gtmaction="click" href="https://www.rheem.com/contact">Contact</a>
+                    <a data-gtmlocation="header" data-gtmobject="Partners" data-gtmaction="click" href="https://my.rheem.com" target="_blank">Partners</a>
+                    <a data-gtmlocation="header" data-gtmobject="Why Rheem" data-gtmaction="click" href="https://www.rheem.com/about">Why Rheem</a>
+                </div>
+            </div>
+        </div>
+        <!--MAIN NAV-->
+        <div class="mainnav row">
+            <div class="col-10 col-md-5 align-self-center">
+                <div class="logowrapper">
+                    <div class="logo-icon align-self-center">
+                        <a data-gtmlocation="header" data-gtmobject="Rheem Logo" data-gtmaction="click" href="https://www.rheem.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+                                <path fill-rule="evenodd" fill="rgb(228, 0, 43)" d="M51.439,102.926 C23.038,102.889 0.045,79.837 0.083,51.437 C0.120,23.036 23.173,0.043 51.572,0.080 C79.972,0.117 102.966,23.171 102.929,51.571 C102.892,79.971 79.839,102.964 51.439,102.926 ZM88.007,81.588 C89.483,81.590 90.763,80.470 90.766,78.778 C90.768,77.086 89.490,75.963 88.014,75.962 C86.528,75.960 85.245,77.079 85.243,78.771 C85.240,80.373 86.391,81.585 88.007,81.588 ZM36.338,37.391 C35.851,24.930 27.254,19.333 16.475,19.240 C15.266,19.230 13.650,19.273 12.443,19.434 L12.359,83.555 L17.523,83.561 L17.559,56.629 L44.145,87.063 L49.553,87.070 L25.333,57.894 C33.515,53.777 36.696,46.543 36.338,37.391 ZM45.430,40.946 C44.256,41.103 43.193,41.760 42.411,42.697 L42.467,1.760 C41.026,2.019 39.610,2.343 38.215,2.725 L38.123,72.568 L42.374,72.574 L42.407,47.680 C42.407,47.680 42.409,45.729 43.934,45.732 C45.512,45.735 45.510,47.685 45.510,47.685 L45.480,72.578 L49.727,72.583 L49.761,47.690 L49.763,45.154 C49.767,42.512 47.828,40.629 45.430,40.946 ZM57.350,40.941 C54.022,40.938 51.321,45.259 51.305,56.925 C51.291,68.592 53.981,72.918 57.309,72.923 C60.107,72.927 62.463,69.869 63.150,61.946 L59.073,61.410 C58.917,66.237 58.437,68.128 57.315,68.126 C55.976,68.125 55.591,65.459 55.557,58.381 L59.114,58.385 L63.349,58.392 L63.350,56.941 C63.366,45.275 60.676,40.946 57.350,40.941 ZM71.008,40.960 C67.684,40.955 64.981,45.278 64.965,56.944 C64.951,68.610 67.643,72.937 70.968,72.941 C73.767,72.944 76.124,69.887 76.811,61.965 L72.734,61.429 C72.579,66.255 72.099,68.146 70.973,68.145 C69.637,68.143 69.251,65.476 69.217,58.399 L72.772,58.404 L77.008,58.409 L77.009,56.960 C77.025,45.294 74.335,40.964 71.008,40.960 ZM93.620,40.991 C92.079,40.989 90.735,41.732 90.053,42.825 C89.371,41.730 88.036,40.983 86.496,40.982 C84.968,40.980 83.639,41.557 82.952,42.638 L82.943,42.608 C82.599,40.929 80.979,40.858 79.025,41.164 C78.914,41.181 78.802,41.203 78.695,41.226 L78.652,72.621 L82.903,72.627 L82.936,47.733 C82.936,47.733 82.938,45.783 84.463,45.786 C86.043,45.787 86.041,47.738 86.041,47.738 L86.011,72.632 L90.258,72.637 L90.292,47.743 C90.292,47.743 90.293,45.793 91.817,45.795 C93.397,45.797 93.395,47.748 93.395,47.748 L93.365,72.640 L97.614,72.647 L97.647,47.753 L97.651,45.217 L97.663,44.489 C97.654,42.595 95.855,40.994 93.620,40.991 ZM71.003,45.758 C72.285,45.759 72.719,48.237 72.784,54.710 L69.230,54.706 C69.307,48.232 69.718,45.756 71.003,45.758 ZM57.344,45.739 C58.624,45.741 59.059,48.218 59.126,54.693 L55.570,54.687 C55.647,48.214 56.060,45.737 57.344,45.739 ZM18.695,54.487 C18.369,54.514 17.830,54.468 17.561,54.449 L17.601,24.598 C18.104,24.600 18.610,24.526 19.111,24.531 C27.336,24.611 31.688,30.841 31.679,38.643 C31.668,46.633 27.073,53.813 18.695,54.487 ZM88.013,76.452 C89.216,76.454 90.165,77.409 90.163,78.778 C90.162,80.153 89.211,81.100 88.007,81.098 C86.670,81.096 85.844,80.050 85.846,78.772 C85.848,77.402 86.797,76.450 88.013,76.452 ZM87.452,80.382 L87.454,79.051 L87.935,79.052 L88.738,80.383 L89.318,80.384 L88.447,79.016 C88.916,78.965 89.260,78.731 89.260,78.167 C89.262,77.535 88.879,77.272 88.127,77.271 L86.946,77.269 L86.941,80.381 L87.452,80.382 ZM88.749,78.128 C88.749,78.580 88.410,78.617 88.027,78.616 L87.456,78.615 L87.456,77.706 L88.072,77.706 C88.382,77.707 88.749,77.753 88.749,78.128 Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="search-bar align-self-center">
+                        <div class="col-2 col-md-7 align-self-center text-center">
+                            <!--DESKTOP MAIN NAV ITEMS-->
+                            <div class="desktop desknav align-self-center text-right">
+                                <div class="main-nav-items">
+                                    <div class="itemwrapper">
+                                        <div class=""><a href="#" class="products"><span data-gtmlocation="header" data-gtmobject="Products" data-gtmaction="click">Products</span></a></div>
+                                        <div class=""><a data-gtmlocation="header" data-gtmobject="Warranties" data-gtmaction="click" href="https://www.rheem.com/warranties">Warranties</a></div>
+                                        <div class=""><a data-gtmlocation="header" data-gtmobject="Parts" data-gtmaction="click" href="https://parts.rheem.com" target="_blank">Parts</a></div>
+
+                                        <div class="urgent-button" style="padding-left: 4px"><a data-gtmlocation="header" data-gtmobject="Find a Pro" data-gtmaction="click" href="https://www.rheem.com/find-a-pro" class="btn btn-primary">Find a Pro</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--MOBILE HAMBURGER-->
+                            <div class="mobile-menu mobile align-self-center">
+                                <i data-gtmlocation="header" data-gtmobject="mobile hamburger" data-gtmaction="click" class="fa fa-bars mobile-hamburger"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tier3header" class="tierheader default ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 align-self-center">
+                    <div class="headercontent">
+                        <div class="titledesktop desktop">
+                            <span class="rh-h1">Supplier Account Request</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="headersmile"></div>
+    </div>
+
+    <div class="container breadcrumbcontainer">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumbs">
+                    <!-- Breadcrumb NavXT 6.6.0 -->
+                    <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Rheem Manufacturing Company." href="https://www.rheem.com" class="home"><span property="name">Home</span></a>
+                            <meta property="position" content="1">
+                        </span></li>
+                    <li class="post post-page current-item"><span property="itemListElement" typeof="ListItem"><span property="name">Supplier Request Account</span>
+                            <meta property="position" content="2">
+                        </span></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <form id="form" action="/create" method="POST" enctype="multipart/form-data">
+        <div class="flex-container">
+            <div class="flex-child magenta">
+                <label for="name">Name</label><br>
+                <input id="name-input" type="text" placeholder="" name="name">
+                <label for="cellNumber">Cell Number</label><br>
+                <input id="diskNumber-input" type="text" placeholder="" name="cellNumber">
+                <label for="email">Email</label><br>
+                <input id="email-input" type="text" placeholder="email@domain.com" name="email">
+                <label for="supplier">Supplier</label><br>
+                <select id="supplier" class="chosen-select" name="supplier">
+                    <option value=""></option>
+                </select>
+                <br><br><br>
+                <button class="btn btn-primary submit-button" aria-invalid="false" type="submit" formmethod="post">Submit Account Request</button>
+                <br><br><br>
+            </div>
+            <div class="flex-child green">
+                <label for="title">Title</label><br>
+                <input id="title-input" type="text" placeholder="" name="title">
+                <label for="deskNumber">Desk Number</label><br>
+                <input id="diskNumber-input" type="text" placeholder="" name="deskNumber">
+            </div>
+
+        </div>
+    </form>
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="Chosen/docsupport/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="Chosen/chosen.jquery.js" type="text/javascript"></script>
+    <script src="Chosen/docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
+    <script src="Chosen/docsupport/init.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        function OnLoad() {
+            SetSelectOptions({{data | tojson}}, "#supplier");
+        }
+        
+        
+        function SetSelectOptions(optionList, selectField) {
+            let select = document.querySelector(selectField);
+            console.log(optionList);
+            for (let element of optionList) {
+                let option = document.createElement("option");
+                console.log(element['value']);
+                console.log(element['id']);
+                option.text = element['value'];
+                option.value = element['value'];
+                select.appendChild(option);
+            }
+
+            $(selectField).trigger("chosen:updated");
+        }
+    </script>
+</body>
+
+</html>
