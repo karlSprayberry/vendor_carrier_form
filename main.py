@@ -11,41 +11,10 @@ app = Flask(__name__)
 app.config['DOCUMENTATION_UPLOAD_FOLDER'] = DOCUMENTATION_UPLOAD_FOLDER
 
 
-def get_suppliers():
-    companies = []
-    if request.method == 'GET':
-        url = "https://rheem.etq.com/reliance/rest/v1/dao/VACATION2/SUPPLIE_PROFILE_2022?columns=COMPANY_NAME,ECC_ID&ordercolumns=COMPANY_NAME&pagesize=2000"
-        headers = {
-             #'authorization': "Basic cmhlZW0tZGV2OmpRcHh5eHQzallRbTRLUlE=", 
-             'authorization': "Basic UmhlZW1Qcm9kOjl3TDZORVtieDcwcSE3ZA==",
-             'content-type': "application/json; charset=utf-8"
-          }
-        response = requests.request("GET", url, headers=headers)
-        status = response.status_code
-        if status == 200:
-
-            print("200 Status")
-            json_data = json.loads(response.content)
-            print(str(json_data))
-            for record in json_data.get("Records"):
-                company = {}
-                try:
-                    print(record)
-                    company['id'] = (record.get("Columns")[1].get("value"))
-                    company['value'] = (record.get("Columns")[0].get("value"))
-                    companies.append(company)
-                except:
-                    print("ERROR: Couldn't add Supplier")
-            print(str(companies))
-            return companies
-        else:
-            return ([]) #render_template('failure.html')
-
 
 
 @app.route('/', methods = ['GET'])
 def index():
-   data = get_suppliers()
    return render_template('index.html', data=data)
 
 @app.route('/documentationFile/<filename>')
