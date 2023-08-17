@@ -136,12 +136,18 @@
             <div class="col-12">
                 <div class="breadcrumbs">
                     <!-- Breadcrumb NavXT 6.6.0 -->
-                    <li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Rheem Manufacturing Company." href="https://www.rheem.com" class="home"><span property="name">Home</span></a>
+                    <li class="home">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a property="item" typeof="WebPage" title="Go to Rheem Manufacturing Company." href="https://www.rheem.com" class="home"><span property="name">Home</span></a>
                             <meta property="position" content="1">
-                        </span></li>
-                    <li class="post post-page current-item"><span property="itemListElement" typeof="ListItem"><span property="name">Vendor Information Initiative</span>
+                        </span>
+                    </li>
+                    <li class="post post-page current-item">
+                        <span property="itemListElement" typeof="ListItem">
+                            <span property="name">Vendor Information Initiative</span>
                             <meta property="position" content="2">
-                        </span></li>
+                        </span>
+                    </li>
                 </div>
             </div>
         </div>
@@ -153,61 +159,62 @@
     <form id="form" action="/create" method="POST" enctype="multipart/form-data">
         <div class="flex-container">
             <div class="flex-child magenta">
-                <label for="vendorContactTitle">Vendor Contact Title</label><br>
-                <input id="vendorContact-input" type="text" placeholder="" name="vendorContactTitle">
-                <label for="firstName">First Name</label><br>
-                <input id="firstName-input" type="text" placeholder="" name="firstName">
-                <label for="lastName">Last Name</label><br>
-                <input id="lastName-input" type="text" placeholder="" name="lastName">
-                <label for="companyName">Company Name</label><br>
-                <input id="companyName-input" type="text" placeholder="" name="companyName">
-                <label for="contactEmail">Contact Email</label><br>
-                <input id="contactEmail-input" type="text" placeholder="" name="contactEmail">
-                <label for="phoneNumber">Phone Number</label><br>
-                <input id="phoneNumber-input" type="text" placeholder="" name="phoneNumber">
-                <label for="companyExist">How long has the company been in existence?</label><br>
-                <textarea id="companyExist-input" type="text" placeholder="" name="companyExist"></textarea>
+                <section>
+                    <h1>Point of Contact</h1>
+                    <label for="vendorContactTitle">Vendor Contact Title</label><br>
+                    <input id="vendorContact-input" type="text" placeholder="" name="vendorContactTitle">
+                    <label for="firstName">First Name</label><br>
+                    <input id="firstName-input" type="text" placeholder="" name="firstName">
+                    <label for="lastName">Last Name</label><br>
+                    <input id="lastName-input" type="text" placeholder="" name="lastName">
+                    <label for="companyName">Company Name</label><br>
+                    <input id="companyName-input" type="text" placeholder="" name="companyName">
+                    <label for="contactEmail">Contact Email</label><br>
+                    <input id="contactEmail-input" type="text" placeholder="" name="contactEmail">
+                    <label for="phoneNumber">Phone Number</label><br>
+                    <input id="phoneNumber-input" type="text" placeholder="" name="phoneNumber">
+                    <label for="companyExist">How long has the company been in existence?</label><br>
+                    <textarea id="companyExist-input" type="text" placeholder="" name="companyExist"></textarea>
 
-                <label for="currentConductQuestion"> Has or is the company currently conducting business under any other names within the last 10 years?</label><br>
-                <input type="radio" id="Yes" name="currentConductQuestion" value="Yes">
-                <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="currentConductQuestion" value="No">
-                <label for="No">No</label><br><br>
+                    <label for="currentConductQuestion"> Has or is the company currently conducting business under any other names within the last 10 years?</label><br>
+                    <input type="radio" id="Yes" name="currentConductQuestion" value="Yes">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="No" name="currentConductQuestion" value="No">
+                    <label for="No">No</label><br><br>
 
-                <label for="businessType">Type Of Business</label><br>
-                <input type="radio" id="Individual" name="businessType" value="Individual">
-                <label for="Individual">Individual</label><br>
-                <input type="radio" id="Corporation" name="businessType" value="Corporation">
-                <label for="Corporation">Corporation</label><br>
-                <input type="radio" id="Partnership" name="businessType" value="Partnership">
-                <label for="Partnership">Partnership</label><br>
-                <input type="radio" id="LLC" name="businessType" value="LLC">
-                <label for="LLC">LLC</label><br>
-                <input type="radio" id="Other" name="businessType" value="Other">
-                <label for="Other">Other</label><br><br>
+                    <label for="businessType">Type Of Business</label><br>
+                    <input type="radio" id="Individual" name="businessType" value="Individual">
+                    <label for="Individual">Individual</label><br>
+                    <input type="radio" id="Corporation" name="businessType" value="Corporation">
+                    <label for="Corporation">Corporation</label><br>
+                    <input type="radio" id="Partnership" name="businessType" value="Partnership">
+                    <label for="Partnership">Partnership</label><br>
+                    <input type="radio" id="LLC" name="businessType" value="LLC">
+                    <label for="LLC">LLC</label><br>
+                    <input type="radio" id="Other" name="businessType" value="Other">
+                    <label for="Other">Other</label><br><br>
 
-                <label for="publicTradedRadio">Is the company publicly traded?</label><br>
-                <input type="radio" id="Yes" name="publicTradedRadio" value="Yes">
-                <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="publicTradedRadio" value="No">
-                <label for="No">No</label><br><br>
+                    <label for="publicTradedRadio">Is the company publicly traded?</label><br>
+                    <input type="radio" id="Yes" name="publicTradedRadio" value="Yes">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="No" name="publicTradedRadio" value="No">
+                    <label for="No">No</label><br><br>
 
-                <label for="codeOfConductConfirm">Please confirm that the company has read and abides by our Supplier Code of Conduct located at rheem.com.</label><br>
-                <input type="radio" id="Yes" name="codeOfConductConfirm" value="Yes">
-                <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="codeOfConductConfirm" value="No">
-                <label for="No">No</label><br><br>
+                    <label for="codeOfConductConfirm">Please confirm that the company has read and abides by our Supplier Code of Conduct located at rheem.com.</label><br>
+                    <input type="radio" id="Yes" name="codeOfConductConfirm" value="Yes">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="No" name="codeOfConductConfirm" value="No">
+                    <label for="countryOfOrigin">What is the country of origin for the goods the company provides to Rheem? If there are more than one, please list them.</label><br>
+                    <textarea id="countryOfOrigin-input" type="text" placeholder="" name="countryOfOrigin"></textarea>
+                    <label for="rheemRelationships">List previous or current relationships with Rheem and the period when such relationships were active.</label><br>
+                    <textarea id="rheemRelationships-input" type="text" placeholder="" name="rheemRelationships"></textarea>
 
-                <label for="countryOfOrigin">What is the country of origin for the goods the company provides to Rheem? If there are more than one, please list them.</label><br>
-                <textarea id="countryOfOrigin-input" type="text" placeholder="" name="countryOfOrigin"></textarea>
-                <label for="rheemRelationships">List previous or current relationships with Rheem and the period when such relationships were active.</label><br>
-                <textarea id="rheemRelationships-input" type="text" placeholder="" name="rheemRelationships"></textarea>
-
-                <label for="thirdPartiesRadio"> Do the company plan to use any third parties (other than transport services) in providing goods / services?</label><br>
-                <input type="radio" id="Yes" name="thirdPartiesRadio" value="Yes">
-                <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="thirdPartiesRadio" value="No">
-                <label for="No">No</label><br><br>
+                    <label for="thirdPartiesRadio"> Do the company plan to use any third parties (other than transport services) in providing goods / services?</label><br>
+                    <input type="radio" id="Yes" name="thirdPartiesRadio" value="Yes">
+                    <label for="Yes">Yes</label><br>
+                    <input type="radio" id="No" name="thirdPartiesRadio" value="No">
+                    <label for="No">No</label><br><br>
+                </section>
 
 
                 <!--Legal Section-->
@@ -413,8 +420,8 @@
         function OnLoad() {
             SetSelectOptions({{data | tojson}}, "#supplier");
         }
-        
-        
+
+
         function SetSelectOptions(optionList, selectField) {
             let select = document.querySelector(selectField);
             console.log(optionList);
