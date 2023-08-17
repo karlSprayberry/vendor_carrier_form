@@ -58,7 +58,6 @@ def get_file():
 
 @app.route('/create', methods = ['POST'])
 def create():
-    print(request.form['supplier'])
     if request.method == 'POST':
         bean = {"Document": [
                            {
