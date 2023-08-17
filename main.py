@@ -15,7 +15,7 @@ app.config['DOCUMENTATION_UPLOAD_FOLDER'] = DOCUMENTATION_UPLOAD_FOLDER
 
 @app.route('/', methods = ['GET'])
 def index():
-   return render_template('index.html', data=data)
+   return render_template('index.html')
 
 @app.route('/documentationFile/<filename>')
 def documentationFile_file(filename):
