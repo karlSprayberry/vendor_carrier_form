@@ -452,30 +452,7 @@
 
 
     <!-- SCRIPTS -->
-    <script src="Chosen/docsupport/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="Chosen/chosen.jquery.js" type="text/javascript"></script>
-    <script src="Chosen/docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
-    <script src="Chosen/docsupport/init.js" type="text/javascript" charset="utf-8"></script>
     <script>
-        function OnLoad() {
-            SetSelectOptions({{data | tojson}}, "#supplier");
-        }
-
-
-        function SetSelectOptions(optionList, selectField) {
-            let select = document.querySelector(selectField);
-            console.log(optionList);
-            for (let element of optionList) {
-                let option = document.createElement("option");
-                console.log(element['value']);
-                console.log(element['id']);
-                option.text = element['value'];
-                option.value = element['value'];
-                select.appendChild(option);
-            }
-
-            $(selectField).trigger("chosen:updated");
-        }
     </script>
 </body>
 
