@@ -3,7 +3,7 @@ import requests, json, os
 from werkzeug.utils import secure_filename
 import time
 # all config files
-SERVER_HOST_ADDRESS = 'https://aqueous-scrubland-12306.herokuapp.com/'
+SERVER_HOST_ADDRESS = 'https://carrier-vendor-form.herokuapp.com/'
 DOCUMENTATION_UPLOAD_FOLDER = 'static/uploads/documentationFile'
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
