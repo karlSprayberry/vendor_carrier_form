@@ -93,34 +93,83 @@ def create():
     if request.method == 'POST':
         bean = {"Document": [
                            {
-                               "applicationName": "VACATION2",
-                               "formName": "ACCOUNT_MANAGEMENT_ACTIVITY_D",
-                               "phase": "WEBSITE_GENERATION_D",
+                               "applicationName": "VENDOR_COMPLIANCE_1_D",
+                               "formName": "VENDOR_COMPLIANCE_SURVEY_P",
+                               "phase": "RHEEM_REVIEW_2_P",
                                "Fields": [
                                    {
-                                       "fieldName": "NAME_11_D",
-                                       "Values": [request.form['name']]
+                                       "fieldName": "VENDOR_CONTACT_TITLE_P",
+                                       "Values": [request.form['vendorContactTitle']]
                                    },
                                    {
-                                       "fieldName": "TITLE_11_D",
-                                       "Values": [request.form['title']]
+                                       "fieldName": "FIRST_NAME_2_P",
+                                       "Values": [request.form['firstName']]
                                    },
                                    {
-                                       "fieldName": "PHONE_NUMBER_25_D",
-                                       "Values":[request.form['deskNumber']]
+                                       "fieldName": "LAST_NAME_2_P",
+                                       "Values":[request.form['lastName']]
                                    },
                                    {
-                                       "fieldName": "EMAIL_33_D",
-                                       "Values": [request.form['email']]
+                                       "fieldName": "COMPANY_NAME_3_P",
+                                       "Values": [request.form['companyName']]
                                    },
                                    {
-                                       "fieldName": "SUPPLIER_13_D",
-                                       "Values": [request.form['supplier']]
+                                       "fieldName": "CONTACT_EMAIL_17_P",
+                                       "Values": [request.form['contactEmail']]
                                    },
                                    {
-                                       "fieldName": "PHONE_NUMBER_CELL_D",
-                                       "Values": [request.form['cellNumber']]
+                                       "fieldName": "PHONE_NUMBER_3_P",
+                                       "Values": [request.form['phoneNumber']]
+                                   },
+                                   {
+                                       "fieldName": "HOW_LONG_HAS_THE_COMPANY_BEEN_IN_EXISTENCE_P",
+                                       "Values": [request.form['companyExist']]
+                                   },
+                                   {
+                                       "fieldName": "HAS_OR_IS_YOUR_COMPANY_CURRENTLY_CONDUCTING_BUSINESS_UNDER_ANY_OTHER_NAMES_WITHIN_THE_LAST_10_YEARS_IF_YES_WHAT_IS_ARE_THE_NAMES_P",
+                                       "Values": [request.form['currentConductQuestion']]
+                                   },
+                                   {
+                                       "fieldName": "IF_YES_WHAT_IS_ARE_THE_NAMES_P",
+                                       "Values": [request.form['currentConductYes']]
+                                   },
+                                   {
+                                       "fieldName": "TYPE_OF_BUSINESS_P",
+                                       "Values": [request.form['businessType']]
+                                   },
+                                   {
+                                       "fieldName": "IS_THE_BUSINESS_PUBLICLY_TRADED_P",
+                                       "Values": [request.form['publicTradedRadio']]
+                                   },
+                                   {
+                                       "fieldName": "EXCHANGE_D",
+                                       "Values": [request.form['exchange']]
+                                   },
+                                   {
+                                       "fieldName": "SYMBOL_D",
+                                       "Values": [request.form['symbol']]
+                                   },
+                                   {
+                                       "fieldName": "ADD_NAMES_HERE_P",
+                                       "Values": [request.form['ownerTen']]
+                                   },
+                                   {
+                                       "fieldName": "PLEASE_CONFIRM_THAT_YOU_HAVE_READ_AND_ABIDE_BY_OUR_SUPPLIER_CODE_OF_CONDUCT_LOCATED_AT_RHEEM_COM_2_P",
+                                       "Values": [request.form['codeOfConductConfirm']]
+                                   },
+                                   {
+                                       "fieldName": "WHAT_IS_THE_COUNTRY_OF_ORIGIN_FOR_THE_GOODS_YOUR_COMPANY_PROVIDES_TO_RHEEM_IF_THERE_ARE_MORE_THAN_ONE_PLEASE_LIST_THEM_P",
+                                       "Values": [request.form['countryOfOrigin']]
+                                   },
+                                   {
+                                       "fieldName": "LIST_PREVIOUS_OR_CURRENT_RELATIONSHIPS_WITH_RHEEM_AND_THE_PERIOD_WHEN_SUCH_RELATIONSHIPS_WERE_ACTIVE_P",
+                                       "Values": [request.form['rheemRelationships']]
+                                   },
+                                   {
+                                       "fieldName": "DO_YOU_PLAN_TO_USE_ANY_THIRD_PARTIES_OTHER_THAN_TRANSPORT_SERVICES_IN_PROVIDING_GOODS_SERVICES_P",
+                                       "Values": [request.form['thirdPartiesRadio']]
                                    }
+                     
                                ]
                            }
                        ]}
