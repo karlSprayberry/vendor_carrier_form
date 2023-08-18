@@ -68,6 +68,30 @@ def create():
                                    {
                                        "fieldName": "VENDOR_CONTACT_TITLE_P",
                                        "Values": [request.form['vendorContactTitle']]
+                                   },
+                                   {
+                                       "fieldName": "FIRST_NAME_2_P",
+                                       "Values": [request.form['firstName']]
+                                   },
+                                   {
+                                       "fieldName": "LAST_NAME_2_P",
+                                       "Values":[request.form['lastName']]
+                                   },
+                                   {
+                                       "fieldName": "COMPANY_NAME_3_P",
+                                       "Values": [request.form['companyName']]
+                                   },
+                                   {
+                                       "fieldName": "CONTACT_EMAIL_17_P",
+                                       "Values": [request.form['contactEmail']]
+                                   },
+                                   {
+                                       "fieldName": "PHONE_NUMBER_3_P",
+                                       "Values": [request.form['phoneNumber']]
+                                   },
+                                   {
+                                       "fieldName": "HOW_LONG_HAS_THE_COMPANY_BEEN_IN_EXISTENCE_P",
+                                       "Values": [request.form['companyExist']]
                                    }
                      
                                ]
