@@ -92,6 +92,10 @@ def create():
                                    {
                                        "fieldName": "HOW_LONG_HAS_THE_COMPANY_BEEN_IN_EXISTENCE_P",
                                        "Values": [request.form['companyExist']]
+                                   },
+                                   {
+                                       "fieldName" : "HAS_OR_IS_YOUR_COMPANY_CURRENTLY_CONDUCTING_BUSINESS_UNDER_ANY_OTHER_NAMES_WITHIN_THE_LAST_10_YEARS_IF_YES_WHAT_IS_ARE_THE_NAMES_P",
+                                       "Values" : [request.form['currentConductQuestion']]
                                    }
                      
                                ]
