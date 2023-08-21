@@ -161,32 +161,32 @@
                 <section>
                     <h1>Point of Contact</h1>
                     <label for="vendorContactTitle">Vendor Contact Title</label><br>
-                    <input id="vendorContact-input" type="text" placeholder="" name="vendorContactTitle">
+                    <input id="vendorContact-input" type="text" placeholder="" name="vendorContactTitle" required>
                     <label for="firstName">First Name</label><br>
-                    <input id="firstName-input" type="text" placeholder="" name="firstName">
+                    <input id="firstName-input" type="text" placeholder="" name="firstName" required>
                     <label for="lastName">Last Name</label><br>
-                    <input id="lastName-input" type="text" placeholder="" name="lastName">
+                    <input id="lastName-input" type="text" placeholder="" name="lastName" required>
                     <label for="companyName">Company Name</label><br>
-                    <input id="companyName-input" type="text" placeholder="" name="companyName">
+                    <input id="companyName-input" type="text" placeholder="" name="companyName" required>
                     <label for="contactEmail">Contact Email</label><br>
-                    <input id="contactEmail-input" type="text" placeholder="" name="contactEmail">
+                    <input id="contactEmail-input" type="text" placeholder="" name="contactEmail" required>
                     <label for="phoneNumber">Phone Number</label><br>
-                    <input id="phoneNumber-input" type="text" placeholder="" name="phoneNumber">
+                    <input id="phoneNumber-input" type="text" placeholder="" name="phoneNumber" required>
                     <label for="companyExist">How long has the company been in existence?</label><br>
-                    <textarea id="companyExist-input" type="text" placeholder="" name="companyExist"></textarea>
+                    <textarea id="companyExist-input" type="text" placeholder="" name="companyExist" required></textarea>
 
                     <label for="currentConductQuestion"> Has or is the company currently conducting business under any other names within the last 10 years?</label><br>
-                    <input type="radio" id="Yes" name="currentConductQuestion" value="Yes">
+                    <input type="radio" id="Yes" name="currentConductQuestion" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="currentConductQuestion" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="currentConductYes">If yes what is/are the names?</label><br>
-                    <textarea id="currentConductYes-input" type="text" placeholder="" name="currentConductYes"></textarea>
+                    <textarea id="currentConductYes-input" type="text" placeholder="" name="currentConductYes" required></textarea>
 
 
                     <label for="businessType">Type Of Business</label><br>
-                    <input type="radio" id="Individual" name="businessType" value="Individual">
+                    <input type="radio" id="Individual" name="businessType" value="Individual" required>
                     <label for="Individual">Individual</label><br>
                     <input type="radio" id="Corporation" name="businessType" value="Corporation">
                     <label for="Corporation">Corporation</label><br>
@@ -198,21 +198,21 @@
                     <label for="Other">Other</label><br><br>
 
                     <label for="publicTradedRadio">Is the company publicly traded?</label><br>
-                    <input type="radio" id="Yes" name="publicTradedRadio" value="Yes">
+                    <input type="radio" id="Yes" name="publicTradedRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="publicTradedRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="exchange">Exchange</label><br>
-                    <input id="exchange-input" type="text" placeholder="" name="exchange">
+                    <input id="exchange-input" type="text" placeholder="" name="exchange" required>
                     <label for="symbol">Symbol</label><br>
-                    <input id="symbol-input" type="text" placeholder="" name="symbol">
+                    <input id="symbol-input" type="text" placeholder="" name="symbol" required>
                     <label for="ownerTen">If the company is private please list individuals owning more than 10%</label><br>
-                    <textarea id="ownerTen-input" type="text" placeholder="" name="ownerTen"></textarea>
+                    <textarea id="ownerTen-input" type="text" placeholder="" name="ownerTen" required></textarea>
 
 
                     <label for="codeOfConductConfirm">Please confirm that the company has read and abides by our Supplier Code of Conduct located at rheem.com.</label><br>
-                    <input type="radio" id="Yes" name="codeOfConductConfirm" value="Yes">
+                    <input type="radio" id="Yes" name="codeOfConductConfirm" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="codeOfConductConfirm" value="No">
                     <label for="No">No</label><br><br><br>
@@ -220,12 +220,12 @@
                     <a href="https://www.rheem.com/legal/"><label>Please Click Here for Code of Conduct</label></a><br><br>
 
                     <label for="countryOfOrigin">What is the country of origin for the goods the company provides to Rheem? If there are more than one, please list them.</label><br>
-                    <textarea id="countryOfOrigin-input" type="text" placeholder="" name="countryOfOrigin"></textarea>
+                    <textarea id="countryOfOrigin-input" type="text" placeholder="" name="countryOfOrigin" required></textarea>
                     <label for="rheemRelationships">List previous or current relationships with Rheem and the period when such relationships were active.</label><br>
-                    <textarea id="rheemRelationships-input" type="text" placeholder="" name="rheemRelationships"></textarea>
+                    <textarea id="rheemRelationships-input" type="text" placeholder="" name="rheemRelationships" required></textarea>
 
                     <label for="thirdPartiesRadio"> Do the company plan to use any third parties (other than transport services) in providing goods / services?</label><br>
-                    <input type="radio" id="Yes" name="thirdPartiesRadio" value="Yes">
+                    <input type="radio" id="Yes" name="thirdPartiesRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="thirdPartiesRadio" value="No">
                     <label for="No">No</label><br><br>
@@ -238,19 +238,19 @@
                     <h1>Legal</h1>
 
                     <label for="outstandingJudgementsRadio"> Are there any civil, criminal or administrative judgments, claims, suits or arbitration proceedings pending or outstanding against the company or its officers?</label><br>
-                    <input type="radio" id="Yes" name="outstandingJudgementsRadio" value="Yes">
+                    <input type="radio" id="Yes" name="outstandingJudgementsRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="outstandingJudgementsRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="consentDecreeRadio"> Has a consent decree ever been issued against the company, officers or directors by any government entity?</label><br>
-                    <input type="radio" id="Yes" name="consentDecreeRadio" value="Yes">
+                    <input type="radio" id="Yes" name="consentDecreeRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="consentDecreeRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="auditRadio"> Is the company under audit or investigation in connection with the goods or services that you provide to Rheem?</label><br>
-                    <input type="radio" id="Yes" name="auditRadio" value="Yes">
+                    <input type="radio" id="Yes" name="auditRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="auditRadio" value="No">
                     <label for="No">No</label><br><br>
@@ -263,25 +263,25 @@
                     <h1>Government Organizations or Public Officials Relationships</h1>
 
                     <label for="governmentEmployeeRadio">  Non-U.S. Public Official may include employees of government agencies-owned businesses, such as state owned enterprises, and a political party or political candidate.</label><br>
-                    <input type="radio" id="Yes" name="governmentEmployeeRadio" value="Yes">
+                    <input type="radio" id="Yes" name="governmentEmployeeRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="governmentEmployeeRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="publicOfficialRadio">  Does any key employee or senior management member of the company provide financial or any other benefits to a non-U.S. Public Official or a member of a non-U.S. Public Official's family?</label><br>
-                    <input type="radio" id="Yes" name="publicOfficialRadio" value="Yes">
+                    <input type="radio" id="Yes" name="publicOfficialRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="publicOfficialRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="nonUSFamiliyBenefitRadio"> Does any non-U.S. Public Official or a member of a non-U.S. Public Officials family stand to benefit in any way as a result of the relationship with Rheem?</label><br>
-                    <input type="radio" id="Yes" name="nonUSFamiliyBenefitRadio" value="Yes">
+                    <input type="radio" id="Yes" name="nonUSFamiliyBenefitRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="nonUSFamiliyBenefitRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="nonUSRelationRadio"> Is any key employee or senior management of the company related (by blood, marriage, current business association or otherwise) to a non-U.S. Public Official?</label><br>
-                    <input type="radio" id="Yes" name="nonUSRelationRadio" value="Yes">
+                    <input type="radio" id="Yes" name="nonUSRelationRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="nonUSRelationRadio" value="No">
                     <label for="No">No</label><br><br>
@@ -294,13 +294,13 @@
                     <h1>Affiliate Relationships</h1>
 
                     <label for="employeeRheemRadio"> Has any key employee or senior officer of the company ever been employed by or performed services for Rheem?</label><br>
-                    <input type="radio" id="Yes" name="employeeRheemRadio" value="Yes">
+                    <input type="radio" id="Yes" name="employeeRheemRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="employeeRheemRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="companyRelationRadio"> Are any of the company principals related to anyone at Rheem ?</label><br>
-                    <input type="radio" id="Yes" name="companyRelationRadio" value="Yes">
+                    <input type="radio" id="Yes" name="companyRelationRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="companyRelationRadio" value="No">
                     <label for="No">No</label><br><br>
@@ -313,31 +313,31 @@
                         <h1>Insurance Coverage</h1>
 
                         <label for="liabilityCoverageRadio"> Does the company have commercial general liability coverage?</label><br>
-                        <input type="radio" id="Yes" name="liabilityCoverageRadio" value="Yes">
+                        <input type="radio" id="Yes" name="liabilityCoverageRadio" value="Yes" required>
                         <label for="Yes">Yes</label><br>
                         <input type="radio" id="No" name="liabilityCoverageRadio" value="No">
                         <label for="No">No</label><br><br>
 
                         <label for="coverageLimitLiability">If yes, coverage limits?</label><br>
-                        <textarea id="coverageLimitLiability-input" type="text" placeholder="" name="coverageLimitLiability"></textarea>
+                        <textarea id="coverageLimitLiability-input" type="text" placeholder="" name="coverageLimitLiability" required></textarea>
 
 
                         <label for="workersCompensationRadio"> If the company provides services to Rheem or come on site to a Rheem facility, does the company have workers compensation coverage?</label><br>
-                        <input type="radio" id="Yes" name="workersCompensationRadio" value="Yes">
+                        <input type="radio" id="Yes" name="workersCompensationRadio" value="Yes" required>
                         <label for="Yes">Yes</label><br>
                         <input type="radio" id="No" name="workersCompensationRadio" value="No">
                         <label for="No">No</label><br><br>
 
                         <label for="coverageLimitWorkerComp">If yes, coverage limits?</label><br>
-                        <textarea id="coverageLimitWorkerComp-input" type="text" placeholder="" name="coverageLimitWorkerComp"></textarea>
+                        <textarea id="coverageLimitWorkerComp-input" type="text" placeholder="" name="coverageLimitWorkerComp" required></textarea>
 
 
 
                         <label for="retentionAmount">Indicate Retention Amount</label><br>
-                        <textarea id="retentionAmount-input" type="text" placeholder="" name="retentionAmount"></textarea>
+                        <textarea id="retentionAmount-input" type="text" placeholder="" name="retentionAmount" required></textarea>
 
                         <label for="operationsInsuranceRadio">If the company provides products or perform any work for Rheem, does the company have product liability/completed operations insurance coverage?</label><br>
-                        <input type="radio" id="Yes" name="operationsInsuranceRadio" value="Yes">
+                        <input type="radio" id="Yes" name="operationsInsuranceRadio" value="Yes" required>
                         <label for="Yes">Yes</label><br>
                         <input type="radio" id="No" name="operationsInsuranceRadio" value="No">
                         <label for="No">No</label><br><br>
@@ -349,7 +349,7 @@
                         <label for="No">No</label><br><br>
 
                         <label for="coverageOmissionLiability">If yes, what are the coverage limits per claim?</label><br>
-                        <textarea id="coverageOmissionLiability-input" type="text" placeholder="" name="coverageOmissionLiability"></textarea>
+                        <textarea id="coverageOmissionLiability-input" type="text" placeholder="" name="coverageOmissionLiability" required></textarea>
 
                     </section>
 
@@ -360,73 +360,73 @@
                     <h1>Privacy/Data Security</h1>
 
                     <label for="dataBreachRadio"> Has the company had a data breach in the last 3 years?</label><br>
-                    <input type="radio" id="Yes" name="dataBreachRadio" value="Yes">
+                    <input type="radio" id="Yes" name="dataBreachRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="dataBreachRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="cyberInsuranceRadio"> Does the company have cyber liability insurance?</label><br>
-                    <input type="radio" id="Yes" name="cyberInsuranceRadio" value="Yes">
+                    <input type="radio" id="Yes" name="cyberInsuranceRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="cyberInsuranceRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="cyberCoverRadio"> Does the cyber liability insurance cover third party losses?</label><br>
-                    <input type="radio" id="Yes" name="cyberCoverRadio" value="Yes">
+                    <input type="radio" id="Yes" name="cyberCoverRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="cyberCoverRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="privacyPolicyRadio"> Does the company have a privacy policy?</label><br>
-                    <input type="radio" id="Yes" name="privacyPolicyRadio" value="Yes">
+                    <input type="radio" id="Yes" name="privacyPolicyRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="privacyPolicyRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="writtenPolicyRadio"> Does the company have a written security policy / program?</label><br>
-                    <input type="radio" id="Yes" name="writtenPolicyRadio" value="Yes">
+                    <input type="radio" id="Yes" name="writtenPolicyRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="writtenPolicyRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="designateCSORadio"> Has the company designated a Chief Security Officer?</label><br>
-                    <input type="radio" id="Yes" name="designateCSORadio" value="Yes">
+                    <input type="radio" id="Yes" name="designateCSORadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="designateCSORadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="dataBreachPlanRadio"> Does the company have a data breach and incident response plan?</label><br>
-                    <input type="radio" id="Yes" name="dataBreachPlanRadio" value="Yes">
+                    <input type="radio" id="Yes" name="dataBreachPlanRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="dataBreachPlanRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="businessContinuityPlanRadio"> Does the company have a business continuity plan?</label><br>
-                    <input type="radio" id="Yes" name="businessContinuityPlanRadio" value="Yes">
+                    <input type="radio" id="Yes" name="businessContinuityPlanRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="businessContinuityPlanRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="PIIRadio"> Does the company store Rheem Personally Identifiable Information (PII)?</label><br>
-                    <input type="radio" id="Yes" name="PIIRadio" value="Yes">
+                    <input type="radio" id="Yes" name="PIIRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="PIIRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="restEncryptRadio"> If yes, is data encrypted at rest?</label><br>
-                    <input type="radio" id="Yes" name="restEncryptRadio" value="Yes">
+                    <input type="radio" id="Yes" name="restEncryptRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="restEncryptRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="annualPenetrationTestRadio"> Does the company perform annual penetration testing (or testing against the company's anti-malware software)?</label><br>
-                    <input type="radio" id="Yes" name="annualPenetrationTestRadio" value="Yes">
+                    <input type="radio" id="Yes" name="annualPenetrationTestRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="annualPenetrationTestRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="securityTools">What security tools does the company use, including but not limited to:</label><br>
-                    <input type="checkbox" id="Firewall" name="securityTools" value="Firewall">
+                    <input type="checkbox" id="Firewall" name="securityTools" value="Firewall" required>
                     <label for="Firewall">Firewall</label><br>
                     <input type="checkbox" id="AntiVirus" name="securityTools" value="AntiVirus">
                     <label for="AntiVirus">Anti-virus and anti-malware</label><br>
@@ -436,13 +436,13 @@
                     <label for="IntrusionDetect">Intrusion detection tools</label><br><br>
 
                     <label for="securityCertifyRadio"> Does the company have any security control certifications, i.e. ISO 27001, SSAE16, SOC 2?</label><br>
-                    <input type="radio" id="Yes" name="securityCertifyRadio" value="Yes">
+                    <input type="radio" id="Yes" name="securityCertifyRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="securityCertifyRadio" value="No">
                     <label for="No">No</label><br><br>
 
                     <label for="encryptSSLRadio"> Does the company use Secure Sockets Layer (SSL) encryption?</label><br>
-                    <input type="radio" id="Yes" name="encryptSSLRadio" value="Yes">
+                    <input type="radio" id="Yes" name="encryptSSLRadio" value="Yes" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="encryptSSLRadio" value="No">
                     <label for="No">No</label><br><br>
