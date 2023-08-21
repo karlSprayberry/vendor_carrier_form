@@ -204,12 +204,13 @@
                     <input type="radio" id="No" name="publicTradedRadio" value="No" onclick="ShowField(this, 'publiclyTradedDiv')">
                     <label for="No">No</label><br><br>
                     
-                    <div id="publiclyTradedDiv">
+                    <div id="publiclyTradedDiv" style="display:none">
                     <label for="exchange">Exchange</label><br>
                     <input id="exchange-input" type="text" placeholder="" name="exchange" required>
                     <label for="symbol">Symbol</label><br>
                     <input id="symbol-input" type="text" placeholder="" name="symbol" required>
             </div>
+
             <label for="ownerTen">If the company is private please list individuals owning more than 10%</label><br>
             <textarea id="ownerTen-input" type="text" placeholder="" name="ownerTen" required></textarea>
 
@@ -321,7 +322,7 @@
                     <input type="radio" id="No" name="liabilityCoverageRadio" value="No" onclick="ShowField(this, 'liabilityCoverageDiv')">
                     <label for="No">No</label><br><br>
 
-                                                  <div id="liabilityCoverageDiv">
+                                                  <div id="liabilityCoverageDiv" style="display:none">
                                                       <label for="coverageLimitLiability">If yes, coverage limits?</label><br>
                                                       <textarea id="coverageLimitLiability-input" type="text" placeholder="" name="coverageLimitLiability" required></textarea>
                                                   </div>
@@ -332,7 +333,7 @@
                     <input type="radio" id="No" name="workersCompensationRadio" value="No" onclick="ShowField(this, 'workerCompCoverageDiv')">
                     <label for="No">No</label><br><br>
 
-                                                  <div id="workerCompCoverageDiv">
+                                                  <div id="workerCompCoverageDiv" style="display:none">
                                                       <label for="coverageLimitWorkerComp">If yes, coverage limits?</label><br>
                                                       <textarea id="coverageLimitWorkerComp-input" type="text" placeholder="" name="coverageLimitWorkerComp" required></textarea>
                                                   </div>
@@ -351,11 +352,11 @@
                     <input type="radio" id="Yes" name="omissionLiabilityRadio" value="Yes" onclick="ShowField(this, 'omissionLiabilityDiv')" required>
                     <label for="Yes">Yes</label><br>
                     <input type="radio" id="No" name="omissionLiabilityRadio" value="No" onclick="ShowField(this, 'omissionLiabilityDiv')">
-                    <label for="No">No</label><br><br>
+                    <label for="No">No</label><br>
                     <input type="radio" id="NA" name="omissionLiabilityRadio" value="NA" onclick="ShowField(this, 'omissionLiabilityDiv')">
                     <label for="NA">N/A</label><br><br>
 
-                                                   <div id="omissionLiabilityDiv">
+                                                   <div id="omissionLiabilityDiv" style="display:none">
                                                        <label for="coverageOmissionLiability">If yes, what are the coverage limits per claim?</label><br>
                                                        <textarea id="coverageOmissionLiability-input" type="text" placeholder="" name="coverageOmissionLiability" required></textarea>
                                                    </div>
@@ -373,7 +374,7 @@
                 <input type="radio" id="No" name="dataBreachRadio" value="No" onclick="ShowField(this, 'dataBreachDiv')">
                 <label for="No">No</label><br><br>
 
-                                              <div id="dataBreachDiv">
+                                              <div id="dataBreachDiv" style="display:none">
                                                   <label for="dataBreachYes">If yes, please explain.</label><br>
                                                   <textarea id="dataBreachYes-input" type="text" placeholder="" name="dataBreachYes" required></textarea>
                                               </div>
@@ -385,7 +386,7 @@
                 <input type="radio" id="No" name="cyberInsuranceRadio" value="No" onclick="ShowField(this, 'cyberInsuranceLimitDiv')">
                 <label for="No">No</label><br><br>
 
-                                              <div id="cyberInsuranceLimitDiv">
+                                              <div id="cyberInsuranceLimitDiv" style="display:none">
                                                   <label for="cyberInsuranceLimit">If yes, coverage limits?</label><br>
                                                   <textarea id="cyberInsuranceLimit-input" type="text" placeholder="" name="cyberInsuranceLimit" required></textarea>
                                               </div>
@@ -414,7 +415,7 @@
                 <input type="radio" id="No" name="designateCSORadio" value="No" onclick="ShowField(this, 'designateCSODiv')">
                 <label for="No">No</label><br><br>
 
-                                              <div id="designateCSODiv">
+                                              <div id="designateCSODiv" style="display:none">
                                                   <label for="contactCSO">If yes, please provide contact information.</label><br>
                                                   <textarea id="contactCSO-input" type="text" placeholder="" name="contactCSO" required></textarea>
                                               </div>
