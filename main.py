@@ -137,7 +137,7 @@ def create():
                                    {
                                        "fieldName" : "DO_YOU_PLAN_TO_USE_ANY_THIRD_PARTIES_OTHER_THAN_TRANSPORT_SERVICES_IN_PROVIDING_GOODS_SERVICES_P",
                                        "Values" : [request.form['thirdPartiesRadio']]
-                                   }
+                                   },
                                    #Point of Contact Fields
 
 
@@ -153,7 +153,7 @@ def create():
                                    {
                                        "fieldName" : "IS_YOUR_COMPANY_UNDER_AUDIT_OR_INVESTIGATION_IN_CONNECTION_WITH_THE_GOODS_OR_SERVICES_THAT_YOU_PROVIDE_TO_RHEEM_P",
                                        "Values" : [request.form['auditRadio']]
-                                   }
+                                   },
                                    #Legal Fields
 
 
@@ -173,7 +173,7 @@ def create():
                                    {
                                        "fieldName" : "IS_ANY_KEY_EMPLOYEE_OR_SENIOR_MANAGEMENT_OF_THE_BUSINESS_RELATED_BY_BLOOD_MARRIAGE_CURRENT_BUSINESS_ASSOCIATION_OR_OTHERWISE_TO_A_NON_U_S_PUBLIC_OFFICIAL_P",
                                        "Values" : [request.form['nonUSRelationRadio']]
-                                   }
+                                   },
                                    #Government Fields
 
 
@@ -185,7 +185,7 @@ def create():
                                    {
                                        "fieldName" : "ARE_ANY_OF_YOUR_BUSINESS_PRINCIPALS_RELATED_TO_ANYONE_AT_RHEEM_P",
                                        "Values" : [request.form['companyRelationRadio']]
-                                   }
+                                   },
                                    #Affiliate Fields
 
 
@@ -221,6 +221,7 @@ def create():
                                    {
                                        "fieldName" : "IF_YES_COVERAGE_LIMITS_3_P",
                                        "Values" : [request.form['coverageOmissionLiability']]
+                                   },
                                    #Insurance Fields
 
 
