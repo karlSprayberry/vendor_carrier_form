@@ -356,97 +356,110 @@
                 <br><br>
 
                 <!--Privacy Data/Security Section-->
-                <section>
-                    <h1>Privacy/Data Security</h1>
+                    <section>
+                        <h1>Privacy/Data Security</h1>
 
-                    <label for="dataBreachRadio"> Has the company had a data breach in the last 3 years?</label><br>
-                    <input type="radio" id="Yes" name="dataBreachRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="dataBreachRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="dataBreachRadio"> Has the company had a data breach in the last 3 years?</label><br>
+                        <input type="radio" id="Yes" name="dataBreachRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="dataBreachRadio" value="No">
+                        <label for="No">No</label><br><br>
 
-                    <label for="cyberInsuranceRadio"> Does the company have cyber liability insurance?</label><br>
-                    <input type="radio" id="Yes" name="cyberInsuranceRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="cyberInsuranceRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="dataBreachYes">If yes, please explain.</label><br>
+                        <textarea id="dataBreachYes-input" type="text" placeholder="" name="dataBreachYes" required></textarea>
 
-                    <label for="cyberCoverRadio"> Does the cyber liability insurance cover third party losses?</label><br>
-                    <input type="radio" id="Yes" name="cyberCoverRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="cyberCoverRadio" value="No">
-                    <label for="No">No</label><br><br>
 
-                    <label for="privacyPolicyRadio"> Does the company have a privacy policy?</label><br>
-                    <input type="radio" id="Yes" name="privacyPolicyRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="privacyPolicyRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="cyberInsuranceRadio"> Does the company have cyber liability insurance?</label><br>
+                        <input type="radio" id="Yes" name="cyberInsuranceRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="cyberInsuranceRadio" value="No">
+                        <label for="No">No</label><br><br>
 
-                    <label for="writtenPolicyRadio"> Does the company have a written security policy / program?</label><br>
-                    <input type="radio" id="Yes" name="writtenPolicyRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="writtenPolicyRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="cyberInsuranceLimit">If yes, coverage limits?</label><br>
+                        <textarea id="cyberInsuranceLimit-input" type="text" placeholder="" name="cyberInsuranceLimit" required></textarea>
 
-                    <label for="designateCSORadio"> Has the company designated a Chief Security Officer?</label><br>
-                    <input type="radio" id="Yes" name="designateCSORadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="designateCSORadio" value="No">
-                    <label for="No">No</label><br><br>
 
-                    <label for="dataBreachPlanRadio"> Does the company have a data breach and incident response plan?</label><br>
-                    <input type="radio" id="Yes" name="dataBreachPlanRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="dataBreachPlanRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="cyberCoverRadio"> Does the cyber liability insurance cover third party losses?</label><br>
+                        <input type="radio" id="Yes" name="cyberCoverRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="cyberCoverRadio" value="No">
+                        <label for="No">No</label><br><br>
 
-                    <label for="businessContinuityPlanRadio"> Does the company have a business continuity plan?</label><br>
-                    <input type="radio" id="Yes" name="businessContinuityPlanRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="businessContinuityPlanRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="privacyPolicyRadio"> Does the company have a privacy policy?</label><br>
+                        <input type="radio" id="Yes" name="privacyPolicyRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="privacyPolicyRadio" value="No">
+                        <label for="No">No</label><br><br>
 
-                    <label for="PIIRadio"> Does the company store Rheem Personally Identifiable Information (PII)?</label><br>
-                    <input type="radio" id="Yes" name="PIIRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="PIIRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="writtenPolicyRadio"> Does the company have a written security policy / program?</label><br>
+                        <input type="radio" id="Yes" name="writtenPolicyRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="writtenPolicyRadio" value="No">
+                        <label for="No">No</label><br><br>
 
-                    <label for="restEncryptRadio"> If yes, is data encrypted at rest?</label><br>
-                    <input type="radio" id="Yes" name="restEncryptRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="restEncryptRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="designateCSORadio"> Has the company designated a Chief Security Officer?</label><br>
+                        <input type="radio" id="Yes" name="designateCSORadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="designateCSORadio" value="No">
+                        <label for="No">No</label><br><br>
 
-                    <label for="annualPenetrationTestRadio"> Does the company perform annual penetration testing (or testing against the company's anti-malware software)?</label><br>
-                    <input type="radio" id="Yes" name="annualPenetrationTestRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="annualPenetrationTestRadio" value="No">
-                    <label for="No">No</label><br><br>
+                        <label for="contactCSO">If yes, please provide contact information.</label><br>
+                        <textarea id="contactCSO-input" type="text" placeholder="" name="contactCSO" required></textarea>
 
-                    <label for="securityTools">What security tools does the company use, including but not limited to:</label><br>
-                    <input type="checkbox" id="Firewall" name="securityTools" value="Firewall" required>
-                    <label for="Firewall">Firewall</label><br>
-                    <input type="checkbox" id="AntiVirus" name="securityTools" value="AntiVirus">
-                    <label for="AntiVirus">Anti-virus and anti-malware</label><br>
-                    <input type="checkbox" id="DataLoss" name="securityTools" value="DataLoss">
-                    <label for="DataLoss">Data Loss Prevention tools</label><br>
-                    <input type="checkbox" id="IntrusionDetect" name="securityTools" value="IntrusionDetect">
-                    <label for="IntrusionDetect">Intrusion detection tools</label><br><br>
 
-                    <label for="securityCertifyRadio"> Does the company have any security control certifications, i.e. ISO 27001, SSAE16, SOC 2?</label><br>
-                    <input type="radio" id="Yes" name="securityCertifyRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="securityCertifyRadio" value="No">
-                    <label for="No">No</label><br><br>
 
-                    <label for="encryptSSLRadio"> Does the company use Secure Sockets Layer (SSL) encryption?</label><br>
-                    <input type="radio" id="Yes" name="encryptSSLRadio" value="Yes" required>
-                    <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="encryptSSLRadio" value="No">
-                    <label for="No">No</label><br><br>
-                </section>
+                        <label for="dataBreachPlanRadio"> Does the company have a data breach and incident response plan?</label><br>
+                        <input type="radio" id="Yes" name="dataBreachPlanRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="dataBreachPlanRadio" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="businessContinuityPlanRadio"> Does the company have a business continuity plan?</label><br>
+                        <input type="radio" id="Yes" name="businessContinuityPlanRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="businessContinuityPlanRadio" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="PIIRadio"> Does the company store Rheem Personally Identifiable Information (PII)?</label><br>
+                        <input type="radio" id="Yes" name="PIIRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="PIIRadio" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="restEncryptRadio"> If yes, is data encrypted at rest?</label><br>
+                        <input type="radio" id="Yes" name="restEncryptRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="restEncryptRadio" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="annualPenetrationTestRadio"> Does the company perform annual penetration testing (or testing against the company's anti-malware software)?</label><br>
+                        <input type="radio" id="Yes" name="annualPenetrationTestRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="annualPenetrationTestRadio" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="securityTools">What security tools does the company use, including but not limited to:</label><br>
+                        <input type="checkbox" id="Firewall" name="securityTools" value="Firewall" required>
+                        <label for="Firewall">Firewall</label><br>
+                        <input type="checkbox" id="AntiVirus" name="securityTools" value="AntiVirus">
+                        <label for="AntiVirus">Anti-virus and anti-malware</label><br>
+                        <input type="checkbox" id="DataLoss" name="securityTools" value="DataLoss">
+                        <label for="DataLoss">Data Loss Prevention tools</label><br>
+                        <input type="checkbox" id="IntrusionDetect" name="securityTools" value="IntrusionDetect">
+                        <label for="IntrusionDetect">Intrusion detection tools</label><br><br>
+
+                        <label for="securityCertifyRadio"> Does the company have any security control certifications, i.e. ISO 27001, SSAE16, SOC 2?</label><br>
+                        <input type="radio" id="Yes" name="securityCertifyRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="securityCertifyRadio" value="No">
+                        <label for="No">No</label><br><br>
+
+                        <label for="encryptSSLRadio"> Does the company use Secure Sockets Layer (SSL) encryption?</label><br>
+                        <input type="radio" id="Yes" name="encryptSSLRadio" value="Yes" required>
+                        <label for="Yes">Yes</label><br>
+                        <input type="radio" id="No" name="encryptSSLRadio" value="No">
+                        <label for="No">No</label><br><br>
+                    </section>
 
                 <br><br><br>
                 <button class="btn btn-primary submit-button" aria-invalid="false" type="submit" formmethod="post">Submit Vendor Form</button>
