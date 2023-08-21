@@ -65,6 +65,11 @@ def create():
                                "formName": "VENDOR_COMPLIANCE_SURVEY_P",
                                "phase": "RHEEM_REVIEW_2_P",
                                "Fields": [
+                                   {
+                                       "fieldName" : "CARRIER_P",
+                                       "Values" : ["Yes"]
+                                   },
+                                   
                                    #Point of Contact Fields
                                    {
                                        "fieldName": "VENDOR_CONTACT_TITLE_P",
@@ -284,7 +289,7 @@ def create():
                                    },
                                    {
                                        "fieldName" : "CLICK_ALL_THAT_APPLY_P",
-                                       "Values" : [request.form['securityTools']]
+                                       "Values" : [request.form.getlist('securityTools')]
                                    },
                                    {
                                        "fieldName" : "DOES_THE_COMPANY_HAVE_ANY_SECURITY_CONTROL_CERTIFICATIONS_I_E_ISO_27001_SSAE16_SOC_2_P",
