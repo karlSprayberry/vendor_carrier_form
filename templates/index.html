@@ -479,9 +479,11 @@
         function ShowField(questionField, affectedFieldText) {
             var affectedField = document.getElementById(affectedFieldText);
             if (questionField.value == "Yes") {
+                console.log("Yes")
                 affectedField.style.display = "block";
             }
             else {
+                console.log("No")
                 affectedField.style.display = "none";
             }
         }
