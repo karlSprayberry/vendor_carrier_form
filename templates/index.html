@@ -178,7 +178,7 @@
                     <label for="currentConductQuestion"> Has or is the company currently conducting business under any other names within the last 10 years?</label><br>
                     <input type="radio" id="Yes" name="currentConductQuestion" value="Yes" onclick="ShowField(this, 'currentConductYesDiv', 'Yes')" required>
                     <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="currentConductQuestion" value="No" onclick="ShowField(this, 'currentConductYesDiv', 'Yes')">
+                    <input type="radio" id="No" name="currentConductQuestion" value="No" onclick="ShowField(this, 'currentConductYesDiv', 'Yes', ['currentConductYes-input'])">
                     <label for="No">No</label><br><br>
 
                     <div id="currentConductYesDiv" style="display:none">
@@ -199,9 +199,9 @@
                     <label for="Other">Other</label><br><br>
 
                     <label for="publicTradedRadio">Is the company publicly traded?</label><br>
-                    <input type="radio" id="Yes" name="publicTradedRadio" value="Yes" onclick="ShowField(this, 'publiclyTradedDiv', 'Yes'); ShowField(this, 'privatelyTradedDiv', 'No');" required >
+                    <input type="radio" id="Yes" name="publicTradedRadio" value="Yes" onclick="ShowField(this, 'publiclyTradedDiv', 'Yes', ['exchange-input', 'symbol-input']); ShowField(this, 'privatelyTradedDiv', 'No', ['ownerTen-input']);" required >
                     <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="publicTradedRadio" value="No" onclick="ShowField(this, 'publiclyTradedDiv', 'Yes'); ShowField(this, 'privatelyTradedDiv', 'No');">
+                    <input type="radio" id="No" name="publicTradedRadio" value="No" onclick="ShowField(this, 'publiclyTradedDiv', 'Yes', ['exchange-input', 'symbol-input']); ShowField(this, 'privatelyTradedDiv', 'No', ['ownerTen-input']);">
                     <label for="No">No</label><br><br>
                     
                     <div id="publiclyTradedDiv" style="display:none">
@@ -318,9 +318,9 @@
                     <h1>Insurance Coverage</h1>
 
                     <label for="liabilityCoverageRadio"> Does the company have commercial general liability coverage?</label><br>
-                    <input type="radio" id="Yes" name="liabilityCoverageRadio" value="Yes" onclick="ShowField(this, 'liabilityCoverageDiv', 'Yes')" required>
+                    <input type="radio" id="Yes" name="liabilityCoverageRadio" value="Yes" onclick="ShowField(this, 'liabilityCoverageDiv', 'Yes', ['coverageLimitLiability-input'])" required>
                     <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="liabilityCoverageRadio" value="No" onclick="ShowField(this, 'liabilityCoverageDiv', 'Yes')">
+                    <input type="radio" id="No" name="liabilityCoverageRadio" value="No" onclick="ShowField(this, 'liabilityCoverageDiv', 'Yes', ['coverageLimitLiability-input'])">
                     <label for="No">No</label><br><br>
 
                                                   <div id="liabilityCoverageDiv" style="display:none">
@@ -329,9 +329,9 @@
                                                   </div>
 
                     <label for="workersCompensationRadio"> If the company provides services to Rheem or come on site to a Rheem facility, does the company have workers compensation coverage?</label><br>
-                    <input type="radio" id="Yes" name="workersCompensationRadio" value="Yes" onclick="ShowField(this, 'workerCompCoverageDiv', 'Yes')" required>
+                    <input type="radio" id="Yes" name="workersCompensationRadio" value="Yes" onclick="ShowField(this, 'workerCompCoverageDiv', 'Yes', ['coverageLimitWorkerComp-input'])" required>
                     <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="workersCompensationRadio" value="No" onclick="ShowField(this, 'workerCompCoverageDiv', 'Yes')">
+                    <input type="radio" id="No" name="workersCompensationRadio" value="No" onclick="ShowField(this, 'workerCompCoverageDiv', 'Yes', ['coverageLimitWorkerComp-input'])">
                     <label for="No">No</label><br><br>
 
                                                   <div id="workerCompCoverageDiv" style="display:none">
@@ -350,11 +350,11 @@
                     <label for="No">No</label><br><br>
 
                     <label for="omissionLiabilityRadio"> If the company provides services to Rheem, does the company have errors and omission liability coverage applicable to those services?</label><br>
-                    <input type="radio" id="Yes" name="omissionLiabilityRadio" value="Yes" onclick="ShowField(this, 'omissionLiabilityDiv', 'Yes')" required>
+                    <input type="radio" id="Yes" name="omissionLiabilityRadio" value="Yes" onclick="ShowField(this, 'omissionLiabilityDiv', 'Yes', ['coverageOmissionLiability-input'])" required>
                     <label for="Yes">Yes</label><br>
-                    <input type="radio" id="No" name="omissionLiabilityRadio" value="No" onclick="ShowField(this, 'omissionLiabilityDiv', 'Yes')">
+                    <input type="radio" id="No" name="omissionLiabilityRadio" value="No" onclick="ShowField(this, 'omissionLiabilityDiv', 'Yes', ['coverageOmissionLiability-input'])">
                     <label for="No">No</label><br>
-                    <input type="radio" id="NA" name="omissionLiabilityRadio" value="NA" onclick="ShowField(this, 'omissionLiabilityDiv', 'Yes')">
+                    <input type="radio" id="NA" name="omissionLiabilityRadio" value="NA" onclick="ShowField(this, 'omissionLiabilityDiv', 'Yes', ['coverageOmissionLiability-input'])">
                     <label for="NA">N/A</label><br><br>
 
                                                    <div id="omissionLiabilityDiv" style="display:none">
@@ -370,9 +370,9 @@
                 <h1>Privacy/Data Security</h1>
 
                 <label for="dataBreachRadio"> Has the company had a data breach in the last 3 years?</label><br>
-                <input type="radio" id="Yes" name="dataBreachRadio" value="Yes" onclick="ShowField(this, 'dataBreachDiv', 'Yes')" required>
+                <input type="radio" id="Yes" name="dataBreachRadio" value="Yes" onclick="ShowField(this, 'dataBreachDiv', 'Yes', ['dataBreachYes-input'])" required>
                 <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="dataBreachRadio" value="No" onclick="ShowField(this, 'dataBreachDiv', 'Yes')">
+                <input type="radio" id="No" name="dataBreachRadio" value="No" onclick="ShowField(this, 'dataBreachDiv', 'Yes', ['dataBreachYes-input'])">
                 <label for="No">No</label><br><br>
 
                                               <div id="dataBreachDiv" style="display:none">
@@ -382,9 +382,9 @@
 
 
                 <label for="cyberInsuranceRadio"> Does the company have cyber liability insurance?</label><br>
-                <input type="radio" id="Yes" name="cyberInsuranceRadio" value="Yes" onclick="ShowField(this, 'cyberInsuranceLimitDiv', 'Yes')" required>
+                <input type="radio" id="Yes" name="cyberInsuranceRadio" value="Yes" onclick="ShowField(this, 'cyberInsuranceLimitDiv', 'Yes', ['cyberInsuranceLimit-input'])" required>
                 <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="cyberInsuranceRadio" value="No" onclick="ShowField(this, 'cyberInsuranceLimitDiv', 'Yes')">
+                <input type="radio" id="No" name="cyberInsuranceRadio" value="No" onclick="ShowField(this, 'cyberInsuranceLimitDiv', 'Yes', ['cyberInsuranceLimit-input'])">
                 <label for="No">No</label><br><br>
 
                                               <div id="cyberInsuranceLimitDiv" style="display:none">
@@ -411,9 +411,9 @@
                 <label for="No">No</label><br><br>
 
                 <label for="designateCSORadio"> Has the company designated a Chief Security Officer?</label><br>
-                <input type="radio" id="Yes" name="designateCSORadio" value="Yes" onclick="ShowField(this, 'designateCSODiv', 'Yes')" required>
+                <input type="radio" id="Yes" name="designateCSORadio" value="Yes" onclick="ShowField(this, 'designateCSODiv', 'Yes', ['contactCSO-input'])" required>
                 <label for="Yes">Yes</label><br>
-                <input type="radio" id="No" name="designateCSORadio" value="No" onclick="ShowField(this, 'designateCSODiv', 'Yes')">
+                <input type="radio" id="No" name="designateCSORadio" value="No" onclick="ShowField(this, 'designateCSODiv', 'Yes', ['contactCSO-input'])">
                 <label for="No">No</label><br><br>
 
                                               <div id="designateCSODiv" style="display:none">
@@ -490,11 +490,14 @@
 
     <!-- SCRIPTS -->
     <script>
-        function ShowField(questionField, affectedDivText, optionMarked) {
+        function ShowField(questionField, affectedDivText, optionMarked, [fields]) {
             var affectedDiv = document.getElementById(affectedDivText);
             if (questionField.value == optionMarked) {
                 affectedDiv.style.display = "block";
-                affectedDiv.setAttribute("required", true);
+                for (field in fields) {
+                    var affectedField = document.getElementById(field);
+                    affectedField.setAttribute("required", true);
+                }
             }
             else {
                 affectedDiv.style.display = "none";
