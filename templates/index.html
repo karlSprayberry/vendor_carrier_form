@@ -183,7 +183,7 @@
 
                     <div id="currentConductYesDiv" style="display:none">
                         <label for="currentConductYes">If yes what is/are the names?</label><br>
-                        <textarea id="currentConductYes-input" type="text" placeholder="" name="currentConductYes" required></textarea>
+                        <textarea id="currentConductYes-input" type="text" placeholder="" name="currentConductYes"></textarea>
                     </div>
 
                     <label for="businessType">Type Of Business</label><br>
@@ -206,14 +206,14 @@
                     
                     <div id="publiclyTradedDiv" style="display:none">
                     <label for="exchange">Exchange</label><br>
-                    <input id="exchange-input" type="text" placeholder="" name="exchange" required>
+                    <input id="exchange-input" type="text" placeholder="" name="exchange">
                     <label for="symbol">Symbol</label><br>
-                    <input id="symbol-input" type="text" placeholder="" name="symbol" required>
+                    <input id="symbol-input" type="text" placeholder="" name="symbol">
             </div>
 
                     <div id="privatelyTradedDiv" style="display:none">
                         <label for="ownerTen">If the company is private please list individuals owning more than 10%</label><br>
-                        <textarea id="ownerTen-input" type="text" placeholder="" name="ownerTen" required></textarea>
+                        <textarea id="ownerTen-input" type="text" placeholder="" name="ownerTen"></textarea>
                     </div>
 
             <label for="codeOfConductConfirm">Please confirm that the company has read and abides by our Supplier Code of Conduct located at rheem.com.</label><br>
@@ -325,7 +325,7 @@
 
                                                   <div id="liabilityCoverageDiv" style="display:none">
                                                       <label for="coverageLimitLiability">If yes, coverage limits?</label><br>
-                                                      <textarea id="coverageLimitLiability-input" type="text" placeholder="" name="coverageLimitLiability" required></textarea>
+                                                      <textarea id="coverageLimitLiability-input" type="text" placeholder="" name="coverageLimitLiability"></textarea>
                                                   </div>
 
                     <label for="workersCompensationRadio"> If the company provides services to Rheem or come on site to a Rheem facility, does the company have workers compensation coverage?</label><br>
@@ -336,7 +336,7 @@
 
                                                   <div id="workerCompCoverageDiv" style="display:none">
                                                       <label for="coverageLimitWorkerComp">If yes, coverage limits?</label><br>
-                                                      <textarea id="coverageLimitWorkerComp-input" type="text" placeholder="" name="coverageLimitWorkerComp" required></textarea>
+                                                      <textarea id="coverageLimitWorkerComp-input" type="text" placeholder="" name="coverageLimitWorkerComp"></textarea>
                                                   </div>
 
 
@@ -359,7 +359,7 @@
 
                                                    <div id="omissionLiabilityDiv" style="display:none">
                                                        <label for="coverageOmissionLiability">If yes, what are the coverage limits per claim?</label><br>
-                                                       <textarea id="coverageOmissionLiability-input" type="text" placeholder="" name="coverageOmissionLiability" required></textarea>
+                                                       <textarea id="coverageOmissionLiability-input" type="text" placeholder="" name="coverageOmissionLiability"></textarea>
                                                    </div>
                 </section>
 
@@ -377,7 +377,7 @@
 
                                               <div id="dataBreachDiv" style="display:none">
                                                   <label for="dataBreachYes">If yes, please explain.</label><br>
-                                                  <textarea id="dataBreachYes-input" type="text" placeholder="" name="dataBreachYes" required></textarea>
+                                                  <textarea id="dataBreachYes-input" type="text" placeholder="" name="dataBreachYes"></textarea>
                                               </div>
 
 
@@ -389,7 +389,7 @@
 
                                               <div id="cyberInsuranceLimitDiv" style="display:none">
                                                   <label for="cyberInsuranceLimit">If yes, coverage limits?</label><br>
-                                                  <textarea id="cyberInsuranceLimit-input" type="text" placeholder="" name="cyberInsuranceLimit" required></textarea>
+                                                  <textarea id="cyberInsuranceLimit-input" type="text" placeholder="" name="cyberInsuranceLimit"></textarea>
                                               </div>
 
                 <label for="cyberCoverRadio"> Does the cyber liability insurance cover third party losses?</label><br>
@@ -418,7 +418,7 @@
 
                                               <div id="designateCSODiv" style="display:none">
                                                   <label for="contactCSO">If yes, please provide contact information.</label><br>
-                                                  <textarea id="contactCSO-input" type="text" placeholder="" name="contactCSO" required></textarea>
+                                                  <textarea id="contactCSO-input" type="text" placeholder="" name="contactCSO"></textarea>
                                               </div>
 
 
@@ -494,10 +494,10 @@
             var affectedDiv = document.getElementById(affectedDivText);
             if (questionField.value == optionMarked) {
                 affectedDiv.style.display = "block";
+                affectedDiv.setAttribute("required", true);
             }
             else {
                 affectedDiv.style.display = "none";
-                affectedDiv.setAttribute("required", false);
             }
         }
     </script>
