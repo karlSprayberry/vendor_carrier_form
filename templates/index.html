@@ -494,7 +494,8 @@
             var affectedDiv = document.getElementById(affectedDivText);
             if (questionField.value == optionMarked) {
                 affectedDiv.style.display = "block";
-                for (field in fields) {
+                for (var field in fields) {
+                    console.log(field)
                     var affectedField = document.getElementById(field);
                     affectedField.setAttribute("required", true);
                 }
