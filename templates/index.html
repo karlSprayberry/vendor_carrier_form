@@ -492,14 +492,14 @@
     <script>
         function ShowField(questionField, affectedDivText, optionMarked, field) {
             var affectedDiv = document.getElementById(affectedDivText);
+            var affectedField = document.getElementById(field);
             if (questionField.value == optionMarked) {
                 affectedDiv.style.display = "block";
-                console.log(field)
-                var affectedField = document.getElementById(field);
                 affectedField.setAttribute("required", true);
             }
             else {
                 affectedDiv.style.display = "none";
+                affectedField.setAttribute("required", false);
             }
         }
     </script>
