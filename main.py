@@ -290,7 +290,7 @@ def create():
                                    },
                                    {
                                        "fieldName" : "CLICK_ALL_THAT_APPLY_P",
-                                       "Values" : [list(request.form.getlist('securityTools'))]
+                                       "Values" : list(request.form.getlist('securityTools'))
                                    },
                                    {
                                        "fieldName" : "DOES_THE_COMPANY_HAVE_ANY_SECURITY_CONTROL_CERTIFICATIONS_I_E_ISO_27001_SSAE16_SOC_2_P",
