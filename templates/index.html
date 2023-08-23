@@ -493,8 +493,11 @@
         function CheckBoxRequired(options, requiredOption) {
             var requiredOptionBox = document.getElementById(requiredOption);
             requiredOptionBox.setAttribute("required", true);
+            console.log(options)
             for (option in options) {
+                console.log(option)
                 var optionBox = document.getElementById(option);
+                console.log(optionBox)
                 optionBox.removeAttribute("required");
             }
         }
