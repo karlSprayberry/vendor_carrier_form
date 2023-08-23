@@ -455,11 +455,11 @@
                 <label for="securityTools">What security tools does the company use, including but not limited to:</label><br>
                 <input type="checkbox" id="Firewall" name="securityTools" value="Firewall" onclick="CheckBoxRequired(['AntiVirus', 'DataLoss', 'IntrusionDetect'], 'Firewall')" required>
                 <label for="Firewall">Firewall</label><br>
-                <input type="checkbox" id="AntiVirus" name="securityTools" value="AntiVirus" onclick="CheckBoxRequired(['Firewall', 'DataLoss', 'IntrusionDetect'], 'AntiVirus')" required>
+                <input type="checkbox" id="AntiVirus" name="securityTools" value="Anti-virus and anti-malware" onclick="CheckBoxRequired(['Firewall', 'DataLoss', 'IntrusionDetect'], 'AntiVirus')" required>
                 <label for="AntiVirus">Anti-virus and anti-malware</label><br>
-                <input type="checkbox" id="DataLoss" name="securityTools" value="DataLoss" onclick="CheckBoxRequired(['AntiVirus', 'Firewall', 'IntrusionDetect'], 'DataLoss')" required>
+                <input type="checkbox" id="DataLoss" name="securityTools" value="Data Loss Prevention tools" onclick="CheckBoxRequired(['AntiVirus', 'Firewall', 'IntrusionDetect'], 'DataLoss')" required>
                 <label for="DataLoss">Data Loss Prevention tools</label><br>
-                <input type="checkbox" id="IntrusionDetect" name="securityTools" value="IntrusionDetect" onclick="CheckBoxRequired(['AntiVirus', 'DataLoss', 'Firewall'], 'IntrusionDetect')" required>
+                <input type="checkbox" id="IntrusionDetect" name="securityTools" value="Intrusion detection tools" onclick="CheckBoxRequired(['AntiVirus', 'DataLoss', 'Firewall'], 'IntrusionDetect')" required>
                 <label for="IntrusionDetect">Intrusion detection tools</label><br><br>
 
                 <label for="securityCertifyRadio"> Does the company have any security control certifications, i.e. ISO 27001, SSAE16, SOC 2?</label><br>
