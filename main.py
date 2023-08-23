@@ -58,6 +58,7 @@ def get_file():
 
 @app.route('/create', methods = ['POST'])
 def create():
+    print(str(list(request.form.getlist('securityTools'))))
     if request.method == 'POST':
         bean = {"Document": [
                            {
