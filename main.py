@@ -67,6 +67,10 @@ def create():
                                "phase": "RHEEM_REVIEW_2_P",
                                "Fields": [
                                    {
+                                       "fieldName" : "CARRIER_CONFIRMATION_NUMBER_P",
+                                       "Values" : [request.form['confirmationNumber']]
+                                   },
+                                   {
                                        "fieldName" : "CARRIER_P",
                                        "Values" : ["Yes"]
                                    },
